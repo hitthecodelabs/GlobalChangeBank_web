@@ -65,6 +65,22 @@
             <div class="skip-link-backdrop"></div>
 
             <div class="site-header__elements l-header__elements">
+                <div class="site-header__utility-bar">
+                    <div class="container-fluid">
+                        <div class="site-header__utility-content">
+                            <nav aria-label="secondary" class="site-header__utility-nav">
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </nav>
+                            <div class="site-header__utility-meta">
+                                <a href="#" class="site-header__utility-link">Rates</a>
+                                <span class="site-header__utility-routing">ABA/Routing #226078609</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- Barra Principal -->
                 <div class="site-header__main-bar">
 
