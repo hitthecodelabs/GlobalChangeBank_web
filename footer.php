@@ -25,11 +25,11 @@
                             <div class="site-footer__app-links rich-text-area">
                                 <p>Access GCB’s institutional tools:</p>
                                 <!-- Los enlaces a las tiendas de apps son externos, se dejan como están -->
-                                <a href="https://apps.apple.com/app/id1221944195" target="_blank" title="Download on the App Store">
+                                <a href="https://apps.apple.com/app/id" target="_blank" title="Download on the App Store">
                                     <!-- Ruta de imagen corregida -->
                                     <img src="/assets/gcb_theme/images/download-on-the-app-store-apple-logo.svg" alt="Download application in Apple App store">
                                 </a>
-                                <a href="https://play.google.com/store/apps/details?id=com.unfcu.mobile" target="_blank" title="Get it on Google Play">
+                                <a href="https://play.google.com/store/apps/details?id=com.bcg.mobile" target="_blank" title="Get it on Google Play">
                                     <!-- Ruta de imagen corregida -->
                                     <img src="/assets/gcb_theme/images/google-play-badge-logo.svg" alt="Download application in Google Play">
                                 </a>
@@ -82,12 +82,7 @@
                             <div class="site-footer__disclosure-text-col rich-text-area">
                                 <!-- Texto personalizado -->
                                 <p class="meta">Global Change Bank (GCB) is a non-profit organization working within the framework of the Council of Global Change.</p>
-                                <p class="meta">GCB does not provide financial, legal, or investment advice and does not offer or solicit banking services.</p>
-                                <p class="meta">Any accounts, cards, or payment features described are issued or operated by regulated partner banks or fintech providers under their respective licenses.</p>
-                                <p class="meta">Participation in GCB programs is subject to partner-bank approval and applicable laws.</p>
-                                <p class="meta">GCB adheres to international standards on anti-money laundering (AML), counter-terrorism financing (CTF), and sanctions compliance.</p>
-                                <p class="meta">All information provided is for educational and institutional purposes only.</p>
-                                <p class="meta">&copy; 2025 Global Change Bank &middot; All Rights Reserved &middot; A Non-Profit Initiative of the Council of Global Change.</p>
+                                <p class="meta">&copy; 2025 Global Change Bank &middot; All Rights Reserved.</p>
                             </div>
                         </div>
                     </div>
