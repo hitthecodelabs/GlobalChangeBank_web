@@ -138,7 +138,7 @@
                                                     <li>
                                                         <div class="site-header__sign-in-toggle-desktop">
                                                              <a class="btn btn-primary" href="/login.php">
-                                                                <span>Sign In</span>
+                                                                <span>Log In</span>
                                                             </a>
                                                         </div>
                                                     </li>
