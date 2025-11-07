@@ -701,25 +701,31 @@ body.off-canvas-open {
 }
 
 .site-footer__main-top {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 2.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
 }
 
 .site-footer__info {
     display: grid;
     gap: 1.75rem;
+    flex: 1 1 320px;
 }
 
 .site-footer__nav {
     display: flex;
     justify-content: flex-end;
+    flex: 2 1 0;
 }
 
 .site-footer__cols {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1.5rem;
+    gap: 1.75rem 2.5rem;
+}
+
+.site-footer__nav-col {
+    min-width: 0;
 }
 
 .site-footer__cols h3 {
@@ -873,10 +879,27 @@ form input:focus {
     .home-hero__wrap,
     .quick-links__wrap,
     .featured-content-block__card,
-    .site-footer__main-top,
-    .site-footer__cols,
     .site-footer__disclosures {
         grid-template-columns: 1fr;
+    }
+
+    .site-footer__main-top {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .site-footer__nav {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .site-footer__cols {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .site-footer__nav-col {
+        min-width: 0;
     }
 
     .card-carousel-block__wrap {
