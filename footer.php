@@ -35,9 +35,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="site-footer__nav">
+                        <nav class="site-footer__nav" aria-label="Footer">
                             <div class="site-footer__cols">
-                                <h2 class="visually-hidden">Footer Navigation</h2>
                                 <div class="site-footer__nav-col">
                                     <h3>Featured Solutions</h3>
                                     <ul>
@@ -64,7 +63,7 @@
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </nav>
                     </div>
                     <div class="site-footer__main-bottom">
                         <div class="site-footer__disclosures">
