@@ -795,6 +795,201 @@ form input:focus {
     box-shadow: 0 0 0 4px rgba(0, 96, 223, 0.15);
 }
 
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.form-group + .form-group {
+    margin-top: 1rem;
+}
+
+/* Auth Views ------------------------------------------------------ */
+.auth-hero {
+    position: relative;
+    padding: clamp(4rem, 8vw, 6rem) 0;
+    background: radial-gradient(circle at top left, rgba(0, 169, 165, 0.15), transparent 55%),
+        linear-gradient(135deg, var(--color-navy) 0%, var(--color-cerulean-dark) 65%, var(--color-cerulean) 100%);
+    color: var(--color-white);
+    overflow: hidden;
+}
+
+.auth-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 60%);
+    pointer-events: none;
+}
+
+.auth-hero .container-fluid {
+    position: relative;
+    z-index: 2;
+}
+
+.auth-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(320px, 420px);
+    align-items: center;
+    gap: clamp(2rem, 5vw, 4rem);
+}
+
+.auth-intro {
+    max-width: 560px;
+}
+
+.auth-intro__eyebrow {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 1rem;
+}
+
+.auth-intro__title {
+    font-size: clamp(2rem, 3vw, 2.75rem);
+    color: var(--color-white);
+    margin-bottom: 1.25rem;
+}
+
+.auth-intro__lead {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+}
+
+.auth-intro__list {
+    margin: 2rem 0 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 0.75rem;
+}
+
+.auth-intro__list li {
+    position: relative;
+    padding-left: 1.75rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.auth-intro__list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 999px;
+    background: rgba(0, 169, 165, 0.85);
+    box-shadow: 0 0 0 4px rgba(0, 169, 165, 0.25);
+}
+
+.auth-card {
+    background: var(--color-white);
+    color: var(--color-text);
+    border-radius: 24px;
+    padding: clamp(2rem, 4vw, 2.75rem);
+    box-shadow: var(--shadow-card);
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.auth-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(140deg, rgba(0, 96, 223, 0.08), rgba(0, 169, 165, 0.06));
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+.auth-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+.auth-card__header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.auth-card__title {
+    margin: 0;
+    color: var(--color-navy);
+}
+
+.auth-card__subtitle {
+    margin: 0;
+    color: var(--color-text-light);
+    font-size: 1rem;
+}
+
+.auth-card__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-card__submit {
+    width: 100%;
+    margin-top: 0.5rem;
+    font-size: 1.05rem;
+}
+
+.auth-card__footer {
+    margin: 0;
+    text-align: center;
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+}
+
+.auth-card__footer a {
+    font-weight: 600;
+}
+
+.auth-hero--register {
+    background: radial-gradient(circle at bottom right, rgba(0, 96, 223, 0.18), transparent 50%),
+        linear-gradient(135deg, var(--color-navy-dark) 0%, var(--color-mint) 70%, rgba(0, 169, 165, 0.9) 100%);
+}
+
+@media (max-width: 1024px) {
+    .auth-layout {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .auth-card {
+        max-width: 520px;
+        justify-self: center;
+    }
+}
+
+@media (max-width: 720px) {
+    .auth-hero {
+        padding: 3.5rem 0;
+    }
+
+    .auth-intro__list {
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 540px) {
+    .auth-card {
+        border-radius: 18px;
+        padding: 1.75rem;
+    }
+
+    .auth-card__submit {
+        font-size: 1rem;
+    }
+}
+
 /* Utilities -------------------------------------------------------- */
 .lead-sm {
     font-size: 1.15rem;

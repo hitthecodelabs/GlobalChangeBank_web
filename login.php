@@ -1,45 +1,65 @@
 <?php include 'header.php'; ?>
 
 <main class="main-wrap" id="main">
-    <div class="container" style="padding-top: 100px; padding-bottom: 100px; max-width: 500px;">
-        
-        <h1 style="text-align: center; margin-bottom: 30px;">Sign In</h1>
+    <section class="auth-hero">
+        <div class="container-fluid">
+            <div class="auth-layout">
+                <div class="auth-intro">
+                    <span class="auth-intro__eyebrow">Global Change Bank</span>
+                    <h1 class="auth-intro__title">Inicia sesión y potencia tus proyectos de impacto</h1>
+                    <p class="auth-intro__lead">
+                        Gestiona alianzas, conecta con inversionistas responsables y mantén el control de tus
+                        iniciativas sociales desde un solo lugar.
+                    </p>
+                    <ul class="auth-intro__list">
+                        <li>Acceso seguro a tableros de colaboración global.</li>
+                        <li>Seguimiento en tiempo real de fondos, métricas y comunidades.</li>
+                        <li>Soporte dedicado del equipo GCB a tus misiones de cambio.</li>
+                    </ul>
+                </div>
 
-        <!-- ============================================================================== -->
-        <!-- CAMBIO IMPORTANTE AQUÍ -->
-        <!-- El 'action' ahora apunta al punto de entrada de Laravel y la ruta de login. -->
-        <!-- ============================================================================== -->
-        <form method="POST" action="index_laravel.php/login">
-            
-            <!--
-                MÁS ADELANTE, CUANDO INTEGREMOS EN LARAVEL, AÑADIREMOS LA LÍNEA MÁGICA:
-                @csrf 
-                Por ahora no la ponemos para evitar errores de PHP.
-            -->
+                <!-- ============================================================================== -->
+                <!-- CAMBIO IMPORTANTE AQUÍ -->
+                <!-- El 'action' ahora apunta al punto de entrada de Laravel y la ruta de login. -->
+                <!-- ============================================================================== -->
+                <div class="auth-card" aria-labelledby="authCardTitle">
+                    <div class="auth-card__header">
+                        <h2 id="authCardTitle" class="auth-card__title">Ingresa a tu cuenta</h2>
+                        <p class="auth-card__subtitle">Bienvenido de vuelta a la comunidad financiera con propósito.</p>
+                    </div>
 
-            <!-- Campo de Email -->
-            <div style="margin-bottom: 15px;">
-                <label for="email" style="display: block; margin-bottom: 5px;">Email Address</label>
-                <input id="email" type="email" name="email" required autofocus style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                    <form class="auth-card__form" method="POST" action="index_laravel.php/login">
+
+                        <!--
+                            MÁS ADELANTE, CUANDO INTEGREMOS EN LARAVEL, AÑADIREMOS LA LÍNEA MÁGICA:
+                            @csrf
+                            Por ahora no la ponemos para evitar errores de PHP.
+                        -->
+
+                        <!-- Campo de Email -->
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input id="email" type="email" name="email" required autofocus>
+                        </div>
+
+                        <!-- Campo de Contraseña -->
+                        <div class="form-group">
+                            <label for="password">Contraseña</label>
+                            <input id="password" type="password" name="password" required>
+                        </div>
+
+                        <button class="btn btn-primary auth-card__submit" type="submit">
+                            Iniciar sesión
+                        </button>
+                    </form>
+
+                    <p class="auth-card__footer">
+                        ¿Aún no formas parte de GCB? <a href="/register.php">Crea tu cuenta</a>.
+                    </p>
+                </div>
             </div>
-
-            <!-- Campo de Contraseña -->
-            <div style="margin-bottom: 20px;">
-                <label for="password" style="display: block; margin-bottom: 5px;">Password</label>
-                <input id="password" type="password" name="password" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
-            </div>
-
-            <button type="submit" style="width: 100%; padding: 15px; background-color: #005A9C; color: white; border: none; border-radius: 5px; font-size: 1.1em; cursor: pointer;">
-                Log In
-            </button>
-
-        </form>
-
-        <p style="text-align: center; margin-top: 20px;">
-            No account? <a href="/register.php">Create one now</a>.
-        </p>
-
-    </div>
+        </div>
+    </section>
 </main>
 
 <?php include 'footer.php'; ?>
