@@ -177,15 +177,44 @@ body.off-canvas-open {
 }
 
 .site-header__main-bar {
+    background: var(--color-white);
+    border-bottom: 1px solid rgba(0, 43, 73, 0.08);
+    padding: 0.75rem 0;
+}
+
+.site-header__main-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    gap: 1.5rem;
+}
+
+.site-header__brand {
+    display: flex;
+    align-items: center;
     gap: 1rem;
+}
+
+.site-header__brand .site-header__logo {
+    display: inline-flex;
+    align-items: center;
+}
+
+.site-header__navigation {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .site-header__off-canvas {
     flex: 1;
+    position: static;
+    transform: none;
+    width: auto;
+    max-width: none;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
 }
 
 .site-header__controls-wrap {
@@ -199,6 +228,10 @@ body.off-canvas-open {
 .mln__list {
     flex: 1;
     justify-content: center;
+}
+
+.site-header__off-canvas .site-header__logo {
+    display: none;
 }
 
 .site-header__desktop-side-controls {
@@ -329,6 +362,31 @@ body.off-canvas-open {
 
 .nav-search__container {
     display: none;
+}
+
+.site-footer__header ul,
+.site-footer__footer ul {
+    justify-content: flex-start;
+}
+
+.site-footer__app-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.site-footer__app-links p {
+    margin-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.site-footer__app-links img {
+    width: 155px;
+    height: auto;
+}
+
+.site-footer__disclosure-text-col {
+    text-align: right;
 }
 
 /* Hero -------------------------------------------------------------- */
@@ -687,7 +745,7 @@ body.off-canvas-open {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2rem;
     margin-top: 2.5rem;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .site-footer__disclosure-group {
@@ -741,6 +799,16 @@ form input:focus {
 
 /* Responsive ------------------------------------------------------- */
 @media (max-width: 1024px) {
+    .site-header__navigation {
+        justify-content: flex-end;
+    }
+
+    .site-header__off-canvas .site-header__logo {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
     .site-header__desktop-side-controls,
     .mln__list {
         display: none;
@@ -814,6 +882,12 @@ form input:focus {
     .card-carousel-block__wrap {
         flex-direction: column;
     }
+
+    .site-footer__header ul,
+    .site-footer__footer ul {
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
@@ -823,6 +897,10 @@ form input:focus {
 
     .site-header__utility-bar {
         display: none;
+    }
+
+    .site-footer__disclosure-text-col {
+        text-align: left;
     }
 
     .home-hero {
@@ -857,5 +935,9 @@ form input:focus {
 
     .promo-card {
         padding: 1.25rem;
+    }
+
+    .site-footer__app-links img {
+        width: 140px;
     }
 }
