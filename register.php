@@ -5,68 +5,68 @@
         <div class="container-fluid">
             <div class="auth-layout">
                 <div class="auth-intro">
-                    <span class="auth-intro__eyebrow">Únete a la red GCB</span>
-                    <h1 class="auth-intro__title">Regístrate y activa el financiamiento con propósito</h1>
+                    <span class="auth-intro__eyebrow">Join the GCB Network</span>
+                    <h1 class="auth-intro__title">Register and activate purpose-driven financing</h1>
                     <p class="auth-intro__lead">
-                        Crea una cuenta para impulsar proyectos climáticos, sociales y de gobernanza con aliados
-                        alrededor del mundo.
+                        Create an account to drive climate, social, and governance projects with partners
+                        around the world.
                     </p>
                     <ul class="auth-intro__list">
-                        <li>Acceso a convocatorias y programas exclusivos del Global Change Council.</li>
-                        <li>Herramientas para documentar impacto y reportar resultados a tus stakeholders.</li>
-                        <li>Mentorías, recursos y acompañamiento continuo del equipo Global Change Bank.</li>
+                        <li>Access to exclusive calls and programs from the Global Change Council.</li>
+                        <li>Tools to document impact and report results to your stakeholders.</li>
+                        <li>Mentorship, resources, and ongoing support from the Global Change Bank team.</li>
                     </ul>
                 </div>
 
                 <!-- ============================================================================== -->
-                <!-- CAMBIO IMPORTANTE AQUÍ -->
-                <!-- El 'action' ahora apunta al punto de entrada de Laravel y la ruta de registro. -->
+                <!-- IMPORTANT CHANGE HERE -->
+                <!-- The 'action' now points to Laravel's entry point and the register route. -->
                 <!-- ============================================================================== -->
                 <div class="auth-card" aria-labelledby="registerCardTitle">
                     <div class="auth-card__header">
-                        <h2 id="registerCardTitle" class="auth-card__title">Crea tu perfil</h2>
-                        <p class="auth-card__subtitle">Conecta con una comunidad que financia transformación global.</p>
+                        <h2 id="registerCardTitle" class="auth-card__title">Create your profile</h2>
+                        <p class="auth-card__subtitle">Connect with a community funding global transformation.</p>
                     </div>
 
                     <form class="auth-card__form" method="POST" action="index_laravel.php/register">
 
                         <!--
-                            MÁS ADELANTE, CUANDO INTEGREMOS EN LARAVEL, AGREGAREMOS:
+                            LATER, WHEN WE INTEGRATE WITH LARAVEL, WE'LL ADD:
                             @csrf
-                            Por ahora no la ponemos para evitar errores de PHP.
+                            For now we skip it to avoid PHP errors.
                         -->
 
-                        <!-- Campo de Nombre -->
+                        <!-- Name Field -->
                         <div class="form-group">
-                            <label for="name">Nombre completo</label>
+                            <label for="name">Full name</label>
                             <input id="name" type="text" name="name" required>
                         </div>
 
-                        <!-- Campo de Email -->
+                        <!-- Email Field -->
                         <div class="form-group">
-                            <label for="email">Correo electrónico</label>
+                            <label for="email">Email address</label>
                             <input id="email" type="email" name="email" required>
                         </div>
 
-                        <!-- Campo de Contrasena -->
+                        <!-- Password Field -->
                         <div class="form-group">
-                            <label for="password">Contraseña</label>
+                            <label for="password">Password</label>
                             <input id="password" type="password" name="password" required>
                         </div>
 
-                        <!-- Campo de Confirmar Contrasena -->
+                        <!-- Confirm Password Field -->
                         <div class="form-group">
-                            <label for="password_confirmation">Confirmar contraseña</label>
+                            <label for="password_confirmation">Confirm password</label>
                             <input id="password_confirmation" type="password" name="password_confirmation" required>
                         </div>
 
                         <button class="btn btn-primary auth-card__submit" type="submit">
-                            Crear cuenta
+                            Create account
                         </button>
                     </form>
 
                     <p class="auth-card__footer">
-                        ¿Ya tienes cuenta? <a href="/login.php">Inicia sesión</a>.
+                        Already have an account? <a href="/login.php">Sign in</a>.
                     </p>
                 </div>
             </div>
