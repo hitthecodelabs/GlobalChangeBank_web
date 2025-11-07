@@ -83,86 +83,94 @@
                 </div>
                 <!-- Barra Principal -->
                 <div class="site-header__main-bar">
+                    <div class="container-fluid">
+                        <div class="site-header__main-inner">
 
-                    <!-- Botón de Menú Móvil -->
-                    <button class="toggle-off-canvas toggle-hamburger" type="button" aria-expanded="false" aria-controls="offCanvasArea" aria-label="Open Menu">
-                        <span class="toggle-hamburger__wrapper">
-                            <span class="toggle-hamburger__bun"></span>
-                            <span class="toggle-hamburger__bun"></span>
-                            <span class="toggle-hamburger__bun"></span>
-                        </span>
-                    </button>
-
-                    <!-- Logo Principal -->
-                    <a class="site-header__logo" href="/">
-                        <img src="/assets/gcb_theme/images/gcb_logo_principal.svg" alt="Global Change Bank Logo" width="153" height="40" />
-                    </a>
-
-                    <!-- Iconos Móviles (Búsqueda y Sign In) -->
-                    <ul class="site-header__mobile-side-controls">
-                        <li>
-                            <div class="site-header__nav-search-toggle-mobile">
-                                <button id="navSearchCollapseToggle" class="btn btn-search btn-search--toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navSearchCollapse">
-                                    <span class="visually-hidden">Search</span>
-                                    <img class="icon-nav-search-close" src="/assets/gcb_theme/images/icon-search-close.svg" alt="" width="20" height="20">
-                                    <img class="icon-nav-search" src="/assets/gcb_theme/images/icon-search.svg" alt="" width="20" height="20">
+                            <div class="site-header__brand">
+                                <!-- Botón de Menú Móvil -->
+                                <button class="toggle-off-canvas toggle-hamburger" type="button" aria-expanded="false" aria-controls="offCanvasArea" aria-label="Open Menu">
+                                    <span class="toggle-hamburger__wrapper">
+                                        <span class="toggle-hamburger__bun"></span>
+                                        <span class="toggle-hamburger__bun"></span>
+                                        <span class="toggle-hamburger__bun"></span>
+                                    </span>
                                 </button>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="site-header__sign-in-toggle-mobile">
-                                <div class="sign-in-toggle-wrap">
-                                    <!-- ESTE ES EL ENLACE DE LOGIN QUE CAMBIAREMOS -->
-                                    <a id="navSignInCollapseToggle" class="btn btn-sign-in btn-sign-in--toggle collapsed" href="/login.php">
-                                        <span>Sign In</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
 
-                    <!-- Menú Principal (Off-Canvas) -->
-                    <div class="site-header__off-canvas l-off-canvas slide-over-transition" id="offCanvasArea" tabindex="-1">
-                        <div class="l-off-canvas__helper">
-                            <nav class="main-nav mln mln--navbar mln--navbar-slide-over" data-mln-breakpoint="1150" aria-label="primary">
+                                <!-- Logo Principal -->
                                 <a class="site-header__logo" href="/">
                                     <img src="/assets/gcb_theme/images/gcb_logo_principal.svg" alt="Global Change Bank Logo" width="153" height="40" />
-                                    <span class="visually-hidden">Global Change Bank</span>
                                 </a>
+                            </div>
 
-                                <div class="site-header__controls-wrap">
-                                    <!-- Lista de Navegación Principal -->
-                                    <ul class="mln__list">
-                                        <li><a href="#">Save</a></li>
-                                        <li><a href="#">Spend</a></li>
-                                        <li><a href="#">Borrow</a></li>
-                                        <li><a href="#">Transfer</a></li>
-                                        <li><a href="#">Learn</a></li>
-                                    </ul>
-                                    
-                                    <!-- Controles Desktop (Búsqueda, Join, Sign In) -->
-                                    <ul class="site-header__desktop-side-controls">
-                                        <li>
-                                            <div class="site-header__nav-search-toggle-desktop"></div>
-                                        </li>
-                                        <li>
-                                            <div class="join-toggle-wrap">
-                                                <!-- ESTE ES EL ENLACE DE REGISTRO QUE CAMBIAREMOS -->
-                                                <a class="btn btn-join" href="/register.php">
-                                                    <span>Join</span>
-                                                </a>
+                            <div class="site-header__navigation">
+                                <!-- Menú Principal (Off-Canvas) -->
+                                <div class="site-header__off-canvas l-off-canvas slide-over-transition" id="offCanvasArea" tabindex="-1">
+                                    <div class="l-off-canvas__helper">
+                                        <nav class="main-nav mln mln--navbar mln--navbar-slide-over" data-mln-breakpoint="1150" aria-label="primary">
+                                            <a class="site-header__logo" href="/">
+                                                <img src="/assets/gcb_theme/images/gcb_logo_principal.svg" alt="Global Change Bank Logo" width="153" height="40" />
+                                                <span class="visually-hidden">Global Change Bank</span>
+                                            </a>
+
+                                            <div class="site-header__controls-wrap">
+                                                <!-- Lista de Navegación Principal -->
+                                                <ul class="mln__list">
+                                                    <li><a href="#">Save</a></li>
+                                                    <li><a href="#">Spend</a></li>
+                                                    <li><a href="#">Borrow</a></li>
+                                                    <li><a href="#">Transfer</a></li>
+                                                    <li><a href="#">Learn</a></li>
+                                                </ul>
+
+                                                <!-- Controles Desktop (Búsqueda, Join, Sign In) -->
+                                                <ul class="site-header__desktop-side-controls">
+                                                    <li>
+                                                        <div class="site-header__nav-search-toggle-desktop"></div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="join-toggle-wrap">
+                                                            <!-- ESTE ES EL ENLACE DE REGISTRO QUE CAMBIAREMOS -->
+                                                            <a class="btn btn-join" href="/register.php">
+                                                                <span>Join</span>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="site-header__sign-in-toggle-desktop">
+                                                             <a class="btn btn-primary" href="/login.php">
+                                                                <span>Sign In</span>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                        </li>
-                                        <li>
-                                            <div class="site-header__sign-in-toggle-desktop">
-                                                 <a class="btn btn-primary" href="/login.php">
-                                                    <span>Sign In</span>
-                                                </a>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                        </nav>
+                                    </div>
                                 </div>
-                            </nav>
+                            </div>
+
+                            <!-- Iconos Móviles (Búsqueda y Sign In) -->
+                            <ul class="site-header__mobile-side-controls">
+                                <li>
+                                    <div class="site-header__nav-search-toggle-mobile">
+                                        <button id="navSearchCollapseToggle" class="btn btn-search btn-search--toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navSearchCollapse">
+                                            <span class="visually-hidden">Search</span>
+                                            <img class="icon-nav-search-close" src="/assets/gcb_theme/images/icon-search-close.svg" alt="" width="20" height="20">
+                                            <img class="icon-nav-search" src="/assets/gcb_theme/images/icon-search.svg" alt="" width="20" height="20">
+                                        </button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="site-header__sign-in-toggle-mobile">
+                                        <div class="sign-in-toggle-wrap">
+                                            <!-- ESTE ES EL ENLACE DE LOGIN QUE CAMBIAREMOS -->
+                                            <a id="navSignInCollapseToggle" class="btn btn-sign-in btn-sign-in--toggle collapsed" href="/login.php">
+                                                <span>Sign In</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
