@@ -10,16 +10,15 @@
             <div class="home-hero__wrap">
                 <div class="home-hero__image-wrap">
                     <!-- Ruta de imagen corregida -->
-                    <img src="/assets/gcb_theme/images/homepage-hero.gif" alt="Global cooperation illustration" width="324" height="324">
+                    <img src="/assets/gcb_theme/images/homepage-hero.webp" alt="Global cooperation illustration" width="324" height="324">
                 </div>
                 <div class="home-hero__body rich-text-area">
                     <!-- Textos actualizados para Global Change Bank -->
                     <span class="home-hero__eyebrow">GLOBAL CHANGE BANK</span>
-                    <h1 class="home-hero__title display-1">Finance with Purpose. Impact with Integrity.
+                    <h1 class="home-hero__title display-1">
                         <span class="home-hero__subtitle">A Non-Profit Financial Platform of the Council of Global Change</span>
                     </h1>
-                    <p class="lead">Global Change Bank (GCB) is a non-profit financial platform established by the Council of Global Change (CGC) to strengthen cooperation between governments, regional parliaments, diplomats, NGOs, and development institutions.</p>
-                    <p class="lead">Our mission is to create a trusted bridge between public purpose and private capital&mdash;empowering local, regional, and intergovernmental actors to access sustainable financial tools that accelerate inclusion, resilience, and global collaboration.</p>
+                    <p class="lead">Global Change Bank (GCB) is a non-profit financial platform established by the Council of Global Change to strengthen cooperation between governments, regional parliaments, diplomats, NGOs, and development institutions.</p>
                     <div style="padding-top: 1rem;">
                         <a class="btn btn-primary" title="Explore Our Mission" href="#">Explore Our Mission</a>
                     </div>
@@ -72,12 +71,12 @@
         <div class="container-fluid">
             <div class="quick-links__wrap">
                 <div class="quick-links__body">
-                    <h2 class="quick-links__title">Our Foundation — Born within the Council of Global Change, GCB operates as an independent, non-profit mechanism guided by:</h2>
+                    <h2 class="quick-links__title">Global Change Bank operates as an independent, non-profit mechanism guided by:</h2>
                     <div class="quick-links__image-wrap">
                         <!-- Rutas de imágenes corregidas -->
-                        <img src="/assets/gcb_theme/images/photo-homepage-default-quick-links-second.jpg" alt="" class="quick-links__image active" loading="lazy" width="583" height="441">
-                        <img id="linkImage-09e8bccb71284bfcb7fe21ce8d78b959" src="/assets/gcb_theme/images/photo-homepage-digital-banking-quick-links.jpg" alt="Individual looking at cellphone." class="quick-links__image" loading="lazy" width="583" height="441">
-                        <img id="linkImage-036cb0a9ccaa47f093db208364dd713a" src="/assets/gcb_theme/images/photo-homepage-transfer.jpg" alt="Two individuals looking at cellphone." class="quick-links__image" loading="lazy" width="583" height="441">
+                        <img src="/assets/gcb_theme/images/photo-homepage-education.webp" alt="" class="quick-links__image active" loading="lazy" width="583" height="441">
+                        <img id="linkImage-09e8bccb71284bfcb7fe21ce8d78b959" src="/assets/gcb_theme/images/photo-homepage-term-share-quick-links.webp" alt="Individual looking at cellphone." class="quick-links__image" loading="lazy" width="583" height="441">
+                        <img id="linkImage-036cb0a9ccaa47f093db208364dd713a" src="/assets/gcb_theme/images/photo-homepage-term-share-quick-links.webp" alt="Two individuals looking at cellphone." class="quick-links__image" loading="lazy" width="583" height="441">
                         <!-- Añade el resto de las imágenes de esta sección si las descargaste -->
                     </div>
                 </div>
@@ -147,7 +146,7 @@
             <div class="featured-content-block__card">
                 <div class="featured-content-block__image-wrap">
                     <!-- Ruta de imagen corregida -->
-                    <img src="/assets/gcb_theme/images/photo-home-financial-wellness.jpg" alt="Individual looking at cellphone." class="featured-content-block__image" width="619" height="619" loading="lazy">
+                    <img src="/assets/gcb_theme/images/photo-home-financial-wellness.webp" alt="Individual looking at cellphone." class="featured-content-block__image" width="619" height="619" loading="lazy">
                 </div>
                 <div class="featured-content-block__body rich-text-area">
                     <h2>Build trusted bridges between public purpose and private capital.</h2>
@@ -172,7 +171,7 @@
                 <div class="card-list-block__row">
                     <div class="promo-card single-click">
                         <!-- Ruta de imagen corregida -->
-                        <img src="/assets/gcb_theme/images/photo-impact-card-second.jpg" alt="Staff members looking at flag." class="promo-card__image" width="344" height="220" loading="lazy">
+                        <img src="/assets/gcb_theme/images/photo-impact-card-second.webp" alt="Staff members looking at flag." class="promo-card__image" width="344" height="220" loading="lazy">
                         <div class="promo-card__body">
                             <h3 class="promo-card__title h6">Linking local priorities to inclusive, global capital</h3>
                         </div>
@@ -182,7 +181,7 @@
                     </div>
                     <div class="promo-card single-click">
                         <!-- Ruta de imagen corregida -->
-                        <img src="/assets/gcb_theme/images/photo-home-card-impact-report.jpg" alt="Climate neutral" class="promo-card__image" width="344" height="220" loading="lazy">
+                        <img src="/assets/gcb_theme/images/photo-home-card-impact-report.webp" alt="Climate neutral" class="promo-card__image" width="344" height="220" loading="lazy">
                         <div class="promo-card__body">
                             <h3 class="promo-card__title h6">Adhering to AML, CTF, and sanctions compliance standards</h3>
                         </div>
@@ -198,55 +197,55 @@
     <!-- ============================================================================== -->
     <!-- Sección CTA (Call to Action) - Join -->
     <!-- ============================================================================== -->
-    <section id="block-6712" class="cta-block cta-block--full-width cta-block--financial-green block-spacing-none">
-        <div class="container-fluid">
-            <div class="cta-block__card">
-                <div class="cta-block__body rich-text-area">
-                    <h2 class="cta-block__title">Open an Institutional Account</h2>
-                    <p class="lead-sm">Partner with GCB to access mission-aligned financial pathways for governments, diplomats, NGOs, and development institutions.</p>
-                    <div class="cta-block__footer">
+    <!--<section id="block-6712" class="cta-block cta-block--full-width cta-block--financial-green block-spacing-none">-->
+    <!--    <div class="container-fluid">-->
+    <!--        <div class="cta-block__card">-->
+    <!--            <div class="cta-block__body rich-text-area">-->
+    <!--                <h2 class="cta-block__title">Open an Institutional Account</h2>-->
+    <!--                <p class="lead-sm">Partner with GCB to access mission-aligned financial pathways for governments, diplomats, NGOs, and development institutions.</p>-->
+    <!--                <div class="cta-block__footer">-->
                         <!-- Enlace actualizado a la página de registro -->
-                        <a href="/register.php" class="btn btn-outline-primary" title="Open an Institutional Account"><span>Open an Institutional Account</span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!--                    <a href="/register.php" class="btn btn-outline-primary" title="Open an Institutional Account"><span>Open an Institutional Account</span></a>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</section>-->
 
     <!-- Modal (Ventana emergente) - Se puede simplificar o eliminar si no es necesaria -->
     <!-- Por ahora, la dejamos pero no es crítica para el diseño inicial. -->
-    <div class="modal fade" id="apply-loan-credit-card" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <div class="modal-content__body">
-                    <section class="editorial-block">
-                        <div class="container-fluid">
-                            <div class="editorial-block__body rich-text-area">
-                                <h2>Connect with GCB programs</h2>
-                                <ul>
-                                    <li>Sign in to the <strong>Institutional Portal</strong>.</li>
-                                    <li>Select <strong>Program Access</strong> to coordinate with our partner banks and fintech providers.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="signin-block signin-block__background signin-block__inline">
-                        <div class="container-fluid">
-                            <div class="signin-block__wrap">
-                                <div class="signin-block__btn-wrap">
-                                    <a class="btn btn-primary" href="/login.php">Institutional Sign In</a>
-                                </div>
-                                <div class="signin-block__content-wrap rich-text-area">
-                                    <p>No account? <span><a href="/register.php">Request institutional enrollment</a>.</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!--<div class="modal fade" id="apply-loan-credit-card" tabindex="-1" aria-hidden="true">-->
+    <!--    <div class="modal-dialog modal-dialog-centered">-->
+    <!--        <div class="modal-content">-->
+    <!--            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+    <!--            <div class="modal-content__body">-->
+    <!--                <section class="editorial-block">-->
+    <!--                    <div class="container-fluid">-->
+    <!--                        <div class="editorial-block__body rich-text-area">-->
+    <!--                            <h2>Connect with GCB programs</h2>-->
+    <!--                            <ul>-->
+    <!--                                <li>Sign in to the <strong>Institutional Portal</strong>.</li>-->
+    <!--                                <li>Select <strong>Program Access</strong> to coordinate with our partner banks and fintech providers.</li>-->
+    <!--                            </ul>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </section>-->
+    <!--                <section class="signin-block signin-block__background signin-block__inline">-->
+    <!--                    <div class="container-fluid">-->
+    <!--                        <div class="signin-block__wrap">-->
+    <!--                            <div class="signin-block__btn-wrap">-->
+    <!--                                <a class="btn btn-primary" href="/login.php">Institutional Sign In</a>-->
+    <!--                            </div>-->
+    <!--                            <div class="signin-block__content-wrap rich-text-area">-->
+    <!--                                <p>No account? <span><a href="/register.php">Request institutional enrollment</a>.</span></p>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </section>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
 
 </main>
 
