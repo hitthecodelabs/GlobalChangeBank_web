@@ -1,4 +1,4 @@
-// assets/gcb_theme/js/offcanvas.js  (FINAL)
+// assets/gcb_theme/js/offcanvas.js
 
 document.addEventListener('DOMContentLoaded', () => {
   if (window.__gcbOffcanvasInit) return;
