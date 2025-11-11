@@ -1534,11 +1534,26 @@ form input:focus {
 
 /* ===== Override loader (overlay + 3 puntos) ===== */
 
+/* Asegura que el loader cubra toda la vista y quede por encima del header */
+#preloader,
+.page-loader,
+.loading-overlay,
+.gcb-loading {
+  position: fixed !important;
+  inset: 0 !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999 !important;
+}
+
 /* color de fondo del overlay */
 #preloader,
 .page-loader,
 .loading-overlay,
-.gcb-loading { 
+.gcb-loading {
   background:#0f172a !important;     /* cambia aquí el fondo */
 }
 
