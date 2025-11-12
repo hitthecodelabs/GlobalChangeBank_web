@@ -1668,3 +1668,20 @@ body.is-loading .gcb-loading{
   pointer-events: auto !important;
 }
 
+/* === FIX: títulos y links en bloques oscuros heredan el color del contenedor === */
+.rich-text-area strong { 
+  color: inherit !important;     /* deja de forzar azul en <strong> */
+}
+
+/* Dentro de rich-text-area, los enlaces usan el color del texto del contenedor */
+.rich-text-area a {
+  color: currentColor !important;
+}
+.rich-text-area a:hover,
+.rich-text-area a:focus {
+  color: currentColor !important;
+  opacity: .9;
+}
+
+/* Utilidad por si quieres forzar blanco en algún nodo concreto */
+.text-white { color: #fff !important; }
